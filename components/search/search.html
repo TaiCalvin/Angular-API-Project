@@ -1,0 +1,6 @@
+<input type="text" ng-model='$ctrl.filter'><button>Submit</button>
+
+<ul>
+<list ng-repeat='movies in $ctrl.movieTitle | filter: $ctrl.filter' genre=
+"movies"></list>
+</ul>
