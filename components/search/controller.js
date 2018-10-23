@@ -2,11 +2,12 @@
 
 {
     angular.module('app')
-        .controller('SearchController', function($http){
+        .controller('SearchController', function($http, TestService){
             const $ctrl = this;
             
+            // $ctrl.num = [];
             $ctrl.movieTitle = [];
-            function movieGenre(){
+            function moviesTitle(){
 
            
                   return $http({
@@ -16,10 +17,11 @@
                   }).then((response) => { 
 
                     for (let i = 0; i < response.data.results.length; i++) {
+                        // $ctrl.num.push(response.data.results[i].genre_ids)
                         $ctrl.movieTitle.push(response.data.results[i].title);
                     }      
-        
-    
+                    TestService.movies = $ctrl.movieTitle
+                
                     console.log(response.data);
                   }, (error) => {
                     console.log(error);
@@ -31,8 +33,18 @@
             };
 
             
-            movieGenre();
+            moviesTitle();
             
+            // function movieGenre() {
+
+            //     return $http({ 
+            //         method: 'GET',
+            //         url: 'https://api.themoviedb.org/3/genre/movie/list?api_key=7291b872bf9d599b2e1cbe4448b45c85&language=en-US',
+            //     }).then((response) => {
+            //         console.log(response.data)
+            //     });
+            // };
+            
+            // movieGenre();
         });
-       
 }
