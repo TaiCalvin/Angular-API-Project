@@ -1,13 +1,18 @@
 .mySlides,
 .mySlides:after { 
-    position: fixed;
+    /* position: relative; */
+    /* height: 100%;
     width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 0px; */
+    /* left: 0px; */
     z-index: 0; 
 }
 .mySlides:after { 
     content: '';
     background: transparent url(../images/pattern.png) repeat top left; 
+}
+
+div.image-container {
+    display: flex;
+    justify-content: center;
 }
