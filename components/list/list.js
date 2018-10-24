@@ -2,8 +2,7 @@
 {
     angular.module('app')
         .component('list', {
-            templateUrl: 'components/list/list.html',
             controller: 'ListController',
-           
+            templateUrl: 'components/list/list.html'
         })
 }
