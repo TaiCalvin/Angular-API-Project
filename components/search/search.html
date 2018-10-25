@@ -1,10 +1,20 @@
 <div class='image-container' >
     <img class="mySlides" src="https://m.media-amazon.com/images/M/MV5BMTU3MTQyNjQwM15BMl5BanBnXkFtZTgwNDgxNDczNTM@._V1_.jpg" height="500" width="750">
     <img class="mySlides" src="https://m.media-amazon.com/images/M/MV5BMjE3MDQ0MTA3M15BMl5BanBnXkFtZTgwMDMwNDY2NTM@._V1_.jpg" height="500" width="750">
-    <img class="mySlides" src="https://prod3.agileticketing.net/images/user/mars_2591/GooseBumps2%20560x315.jpg" height="500" width="750">
+    <img class="mySlides" src="https://i1.wp.com/blackgirlswhobrunch.com/wp-content/uploads/2018/09/NTS_31_5_Promo_4C_2F-1.jpg?fit=1931%2C2888" height="500" width="750">
+    <img class="mySlides" src="https://cdn.amctheatres.com/production/2/movies/50500/50463/PosterDynamic/45626.jpg" height="500" width="750">
+    
 
 </div>
-<input type="text" ng-model='$ctrl.filter'><button>Submit</button>
+
+<div>
+        <select ng-model="$ctrl.genre" placeholder="Genre">
+                <option value="">Genre</option>
+                <option ng-repeat="genre in $ctrl.movieGenre" ng-value='genre.id'>{{genre.name}}</option>
+            </select>
+</div>
+
+<input type="text" ng-model='$ctrl.filter'><button ng-click='$ctrl.submit()'>Submit</button>
 
 <!-- <ul>
 <list ng-repeat='movies in $ctrl.movieTitle | filter: $ctrl.filter' ></list>
