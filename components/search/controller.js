@@ -7,6 +7,7 @@
             
             // $ctrl.num = [];
             $ctrl.movieTitle = [];
+            $ctrl.movieRating = ['G', 'PG']
             $ctrl.submit = function(){
                 console.log($ctrl.genre)
                 moviesTitle();
@@ -17,7 +18,7 @@
                   return $http({
                     
                     method: 'GET',
-                    url: 'https://api.themoviedb.org/3/discover/movie?api_key=7291b872bf9d599b2e1cbe4448b45c85&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres='+$ctrl.genre,
+                    url: `https://api.themoviedb.org/3/discover/movie?api_key=7291b872bf9d599b2e1cbe4448b45c85&language=en-US&sort_by=popularity.desc&certification_country=US&certification=${$ctrl.rating}&include_adult=false&include_video=false&page=1&with_genres=${$ctrl.genre}`,
                   }).then((response) => { 
 
                     for (let i = 0; i < response.data.results.length; i++) {
