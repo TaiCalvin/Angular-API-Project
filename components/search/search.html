@@ -20,6 +20,13 @@
             </select>
 </div>
 
+<div>
+    <select ng-model="$ctrl.year" placeholder="Year">
+            <option value="">Year</option>
+            <option ng-repeat="year in $ctrl.movieYear">{{year}}</option>
+        </select>
+</div>
+
 <input type="text" ng-model='$ctrl.filter'><button ng-click='$ctrl.submit()'>Submit</button>
 
 <!-- <ul>

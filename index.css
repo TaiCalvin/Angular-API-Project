@@ -15,14 +15,35 @@
     z-index: 0; 
     
 }
-/* .mySlides:after { 
+
+
+
+.mySlides:after { 
     content: '';
     background: transparent url(../images/pattern.png) repeat top left; 
-} */
-/* 
-div.image-container {
+}
+
+/*div.image-container {
     display: flex;
     justify-content: center;
+}
+*/
+.image-container {
+    margin-top: 8%;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    height: 50px;
+}
+.navBar {
     
-} */
+    text-decoration: none;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: black;
+}
 
