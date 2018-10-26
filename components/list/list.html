@@ -1,4 +1,8 @@
 <!-- <li   >{{$ctrl.genre}}</li>  -->
 
 <h1>List</h1>
-<li ng-repeat="movies in $ctrl.movieTitle">{{movies}} <button ng-click="$ctrl.addMovie($index)">Add To Favorites</button></li>
+<li ng-repeat="movies in $ctrl.movieTitle">{{movies.poster_path}}{{movies}} 
+    <input type="checkbox" ng-model="info">More Info<br>
+    <p ng-if="info">{{movies}}</p>
+    <button ng-click="$ctrl.addMovie($index)">Add To Favorites</button>
+{{}}</li>
