@@ -1,4 +1,6 @@
-<h1>Favorites</h1>
+<div id="favorites">
+	<h1>Favorites</h1>
+</div>
 <ul>
-    <li ng-repeat="find in $ctrl.add track by $index">{{find}}</li>
+    <li  ng-repeat="find in $ctrl.add track by $index">{{find}}</span> <button ng-click="$ctrl.removeMovie($index)" class="X">X</button></span></li>
 </ul>

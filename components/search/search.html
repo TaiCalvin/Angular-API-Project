@@ -3,25 +3,43 @@
     <img class="mySlides" src="https://m.media-amazon.com/images/M/MV5BMjE3MDQ0MTA3M15BMl5BanBnXkFtZTgwMDMwNDY2NTM@._V1_.jpg" height="500" width="750">
     <img class="mySlides" src="https://i1.wp.com/blackgirlswhobrunch.com/wp-content/uploads/2018/09/NTS_31_5_Promo_4C_2F-1.jpg?fit=1931%2C2888" height="500" width="750">
     <img class="mySlides" src="https://cdn.amctheatres.com/production/2/movies/50500/50463/PosterDynamic/45626.jpg" height="500" width="750">
+    <img class="mySlides" src="https://images-na.ssl-images-amazon.com/images/I/91n8anBKD4L._SY679_.jpg" height="500" width="750">
+    <img class="mySlides" src="https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/213183/Mid90s_Online_Teaser_Vertical.jpg" height="500" width="750">
+    <img class="mySlides" src="https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/210884/JohnnyEnglish_Poster.jpg" height="500" width="750">
+    <img class="mySlides" src="https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/206882/FMN_Tsr1Sheet10_RGB_1.jpg" height="500" width="750">
+    <img class="mySlides" src="https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/211850/BohemianRhapsody2018.jpg" height="500" width="750">
+    <img class="mySlides" src="https://m.media-amazon.com/images/M/MV5BMTc5NzI1NjY4MV5BMl5BanBnXkFtZTgwNDIxNTIyNDM@._V1_.jpg" height="500" width="750">
+    <img class="mySlides" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982110475/first-man-9781982110475_hr.jpg" height="500" width="750">
+
     
 
 </div>
 
-<div>
+<div id= "dropdown">
+
+<div id="genre">
         <select ng-model="$ctrl.genre" placeholder="Genre">
                 <option value="">Genre</option>
                 <option ng-repeat="genre in $ctrl.movieGenre" ng-value='genre.id'>{{genre.name}}</option>
             </select>
 </div>
+
 <div>
-        <select ng-model="$ctrl.rating" placeholder="Rating">
+        <select ng-model="$ctrl.rating" id="rating" placeholder="Rating">
                 <option value="">Rating</option>
                 <option ng-repeat="rating in $ctrl.movieRating">{{rating}}</option>
             </select>
 </div>
 
-<input type="text" ng-model='$ctrl.filter'><button ng-click='$ctrl.submit()'>Submit</button>
+<div>
+    <select ng-model="$ctrl.year" placeholder="Year">
+            <option value="">Year</option>
+            <option ng-repeat="year in $ctrl.movieYear">{{year}}</option>
+        </select>
+</div>
+</div>
 
-<!-- <ul>
-<list ng-repeat='movies in $ctrl.movieTitle | filter: $ctrl.filter' ></list>
-</ul> -->
+<div id="submit">
+<button ng-click='$ctrl.submit()'>Submit</button> 
+</div>
+
