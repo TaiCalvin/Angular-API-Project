@@ -110,3 +110,14 @@ a:hover {
 #buttons:visited {
     color: red;
 }
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
