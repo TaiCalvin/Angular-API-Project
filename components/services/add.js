@@ -4,5 +4,9 @@
         .service('AddService', function(){
             const service = this;
             service.add = [];
+            service.remove = '';
+            
+
+           
         });
 }

@@ -1,57 +1,112 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: black;
+}
 .mySlides {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 40%;
-    height: 55%;
+    width: 350px;
+    height: 475px;
 }
-
 .mySlides:after { 
-     /* position: relative; 
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 50px; */
-    z-index: 0; 
+   z-index: 0; 
     
 }
-
-
-
 .mySlides:after { 
     content: '';
     background: transparent url(../images/pattern.png) repeat top left; 
 }
-
-/*div.image-container {
-    display: flex;
-    justify-content: center;
-}
-*/
 .image-container {
-    margin-top: 8%;
+    margin-top: 5%;
 }
 nav {
     display: flex;
     justify-content: flex-end;
-    background: white;
+    background: black;
     height: 50px;
+  /*  border: white 1px solid;*/
 }
-.navBar {
+a {
     
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
-    font-size: 25px;
-    color: black;
+    font-size: 20px;
+    color: white;
+    margin-top: 8px;
+    border-radius: 30px;
+    border: white solid 1px;
+    width: 8%;
+    padding-left: 50px;
 }
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
+#navBar {
+    padding-left: 75px;
 }
-
+#genre {
+    margin-bottom: 50px;
+}
 li {
-    width: 27%;
+    color: white;
+    padding-top: 20px;
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    color: white;
+    margin-left: 37px;
+}
+#buttons {
+    color:white;
+    background-color: black;
+}
+#list {
+    border-bottom: white 1px solid;
+}
+#favorites {
+    border-bottom: white 1px solid;
+}
+#dropdown {
+    display: flex;
+    margin-left: 500px;
+    padding-top: 15px;
+    
+}
+#genre {
+    padding-right: px;
+ 
+}
+#submit {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    
+   
+   
+}
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+a:hover {
+    transform: skew(-20deg);
+}
+#buttons:hover {
+    transform: skew(-20deg);
+   
+}
+#buttons:visited {
+    color: red;
 }

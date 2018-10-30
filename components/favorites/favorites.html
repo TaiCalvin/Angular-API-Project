@@ -1,4 +1,7 @@
-<h1>Favorites</h1>
+<div id="favorites">
+	<h1>Favorites</h1>
+</div>
 <ul>
-    <li ng-repeat="find in $ctrl.add"><img src="http://image.tmdb.org/t/p/w154/{{find.poster_path}}">{{find.title}}</li>
+    <li  ng-repeat="find in $ctrl.add track by $index"><img src="http://image.tmdb.org/t/p/w154/{{find.poster_path}}">{{find.title}}
+    </span> <button ng-click="$ctrl.removeMovie($index)" class="X">X</button></span></li>
 </ul>
