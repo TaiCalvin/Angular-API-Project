@@ -7,10 +7,10 @@
             
             // $ctrl.num = [];
             $ctrl.movieTitle = [];
-            $ctrl.movieView = [];
             $ctrl.movieRating = ['G', 'PG','E','R'];
             $ctrl.movieYear = ['2000','2001','2002','2018'];
             $ctrl.submit = function(){
+                // window.location = "#!/list";
                 console.log($ctrl.genre)
                 moviesTitle();
             }
@@ -26,10 +26,10 @@
 
                     for (let i = 0; i < response.data.results.length; i++) {
                         // $ctrl.num.push(response.data.results[i].genre_ids)
-                        $ctrl.movieView.push(response.data.results[i].overview)
-                        $ctrl.movieTitle.push(response.data.results[i].title);
+                        // $ctrl.movieTitle.push(response.data.results[i].overview)
+                        // $ctrl.movieTitle.push(response.data.results[i].title);
                     }      
-                    TestService.movies = $ctrl.movieTitle;
+                    TestService.movies = response.data.results;
                 
                     console.log(response.data);
                   }, (error) => {

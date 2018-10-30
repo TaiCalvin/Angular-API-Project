@@ -1,8 +1,11 @@
 <!-- <li   >{{$ctrl.genre}}</li>  -->
 
 <h1>List</h1>
-<li ng-repeat="movies in $ctrl.movieTitle">{{movies}} 
-    <input type="checkbox" ng-model="info">More Info<br>
-    <p ng-if="info" ng-repeat="view in $ctrl.movieView">{{view}}</p>
-    <button ng-click="$ctrl.addMovie($index)">Add To Favorites</button>
-</li>
+<ul>
+    <li ng-repeat="movies in $ctrl.movieTitle track by movies.id"><img src="http://image.tmdb.org/t/p/w154/{{movies.poster_path}}">
+        {{movies.title}} 
+        <input type="checkbox" ng-model="info">More Info<br>
+        <button ng-click="$ctrl.addMovie($index)">Add To Favorites</button>
+        <p ng-if="info">{{movies.overview}}</p>
+    </li>
+</ul>
