@@ -24,14 +24,14 @@
             </select>
 </div>
 
-<div>
+<div id="rating>
         <select ng-model="$ctrl.rating" id="rating" placeholder="Rating">
                 <option value="">Rating</option>
                 <option ng-repeat="rating in $ctrl.movieRating">{{rating}}</option>
             </select>
 </div>
 
-<div>
+<div id="year">
     <select ng-model="$ctrl.year" placeholder="Year">
             <option value="">Year</option>
             <option ng-repeat="year in $ctrl.movieYear">{{year}}</option>
