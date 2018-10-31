@@ -39,10 +39,10 @@ a {
     border-radius: 30px;
     border: white solid 1px;
     width: 8%;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 #navBar {
-    padding-left: 75px;
+    padding-left: 68px;
 }
 #genre {
     margin-bottom: 50px;
@@ -70,7 +70,7 @@ h1 {
 }
 #dropdown {
     display: flex;
-    margin-left: 475px;
+    margin-left: 450px;
     padding-top: 15px;
     
 }
