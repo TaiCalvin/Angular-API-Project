@@ -18,14 +18,14 @@ body {
     background: transparent url(../images/pattern.png) repeat top left; 
 }
 .image-container {
-    margin-top: 5%;
+    margin-top: 4%;
 }
 nav {
     display: flex;
     justify-content: flex-end;
     background: black;
     height: 50px;
-  /*  border: white 1px solid;*/
+    border: white 1px solid;
 }
 a {
     
@@ -70,14 +70,19 @@ h1 {
 }
 #dropdown {
     display: flex;
-    margin-left: 500px;
+    margin-left: 475px;
     padding-top: 15px;
     
 }
+
 #genre {
-    padding-right: px;
- 
+    padding-right: 10px;
+ }
+
+#rating {
+    padding-right: 10px;
 }
+
 #submit {
     display: flex;
     justify-content: center;
@@ -123,12 +128,12 @@ li {
     width: 20%;
 }
 
+
 select {
     width: 100px;
-    height: 25px;
+    height: 25px
 }
-#searchsubmit
-{
+#searchsubmit {
     width: 150px;
     height: 35px;
     border-radius: 30px;
