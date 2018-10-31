@@ -6,7 +6,10 @@
     <h1>List</h1>
     </div>
     <ul>
-        <li ng-repeat="movies in $ctrl.movieTitle">{{movies}}
-    <button id="buttons" ng-click="$ctrl.addMovie($index)">Add To Favorites</button>
+        <li ng-repeat="movies in $ctrl.movieTitle track by movies.id"><img src="http://image.tmdb.org/t/p/w154/{{movies.poster_path}}">
+            {{movies.title}} 
+            <span><input type="checkbox" ng-model="info">More Info</span>
+            <button id="buttons" ng-click="$ctrl.addMovie($index)">Add To Favorites</button>
+            <p ng-if="info">{{movies.overview}}</p>
         </li>
     </ul>

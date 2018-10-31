@@ -11,9 +11,9 @@
                 
             }
 
-            $ctrl.removeMovie = function(index) {
-                AddService.remove.splice($ctrl.movieTitle[index,1]);
-            }
+            // $ctrl.removeMovie = function(index) {
+            //     AddService.remove.splice($ctrl.movieTitle[index,1]);
+            // }
 
             
            

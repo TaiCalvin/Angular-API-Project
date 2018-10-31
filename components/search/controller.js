@@ -27,9 +27,10 @@
 
                     for (let i = 0; i < response.data.results.length; i++) {
                         // $ctrl.num.push(response.data.results[i].genre_ids)
-                        $ctrl.movieTitle.push(response.data.results[i].title);
+                        // $ctrl.movieTitle.push(response.data.results[i].title);
                     }      
-                    TestService.movies = $ctrl.movieTitle;
+                    TestService.movies = response.data.results;
+
                 
                     console.log(response.data);
                   }, (error) => {
@@ -84,7 +85,7 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1} ;
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 7000); // Change image every 7 seconds
+    setTimeout(carousel, 4000); // Change image every 4 seconds
     
 }
 
@@ -95,4 +96,6 @@ function carousel() {
 }
 
 
+
+ 
  
