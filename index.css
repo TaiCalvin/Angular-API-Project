@@ -122,3 +122,21 @@ li {
     align-items: center;
     width: 20%;
 }
+
+select {
+    width: 100px;
+    height: 25px;
+}
+#searchsubmit
+{
+    width: 150px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: white 1px solid;
+    font-size: 18px;
+}
+#searchsubmit:hover {
+    color: red;
+}
